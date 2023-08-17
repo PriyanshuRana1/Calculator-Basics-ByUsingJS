@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hh{
+            border: 10px groove yellow;
+            width: 253px;
+            background: orange;
+            margin: 0px auto;
+            transform: translateY(120px);
+           
+        }
+        input{
+            margin: 5px;
+        }
+        .bt{
+            height: 40px;
+            width: 50px;
+            font-size: 30px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        #dv1{
+           height: 32px;
+            width: 235px;
+            border: 2px solid black;
+        }
+        #dv2{
+           height: 32px;
+            width: 235px;
+            border: 2px solid black;
+        }
+        #dv3{
+           height: 32px;
+            width: 235px;
+            border: 2px solid black;
+        }
+        #bttt{
+            height: 40px;
+            width: 255px;
+        }
+        #headd{
+            height: 55px;
+            width: 1255px;
+            background: yellow;
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <marquee behavior="alternate" direction=""><div id="headd">Basic Concept of Calculator By using JS</div></marquee>
+    <div id="hh">
+    <input type="number" id="dv1" placeholder="Enter any number">
+    <br>
+    <input type="number" id="dv2" placeholder="Enter any number">
+    <br>
+    <div id="bttt">
+    <input type="button" onclick="add()" class="bt" value="+">
+    <input type="button" onclick="sub()" class="bt" value="-">
+    <input type="button" onclick="divide()" class="bt" value="/">
+    <input type="button" onclick="mul()" class="bt" value="*">
+</div>
+    <br>
+    <input type="text" id="dv3">
+</div>
+    
+    <script>
+        function add(){
+
+            var num1=document.getElementById("dv1").value
+            var num2=document.getElementById("dv2").value
+            var msg=document.getElementById("dv3")
+            var res=parseInt(num1)+parseInt(num2)
+            msg.value="Result is : "+res
+
+        }
+        function sub(){
+
+            var num1=document.getElementById("dv1").value
+            var num2=document.getElementById("dv2").value
+            var msg=document.getElementById("dv3")
+            var res=parseInt(num1)-parseInt(num2)
+            msg.value="Result is : "+res
+
+        }
+        function divide(){
+
+            var num1=document.getElementById("dv1").value
+            var num2=document.getElementById("dv2").value
+            var msg=document.getElementById("dv3")
+            var res=parseInt(num1)/parseInt(num2)
+            msg.value="Result is : "+res
+
+        }
+        function mul(){
+
+            var num1=document.getElementById("dv1").value
+            var num2=document.getElementById("dv2").value
+            var msg=document.getElementById("dv3")
+            var res=parseInt(num1)*parseInt(num2)
+            msg.value="Result is : "+res
+
+        }
+
+
+
+
+
+        // var num1=parseInt(prompt("Enter First Number "+""))//camelcase
+        // var num2=parseInt(prompt("Enter second Number "))
+
+        // // var res=parseInt(num1)+parseInt(num2)
+
+        // var res=num1+num2
+        // alert("Result is : " + res);
+    </script>
+</body>
+</html>
